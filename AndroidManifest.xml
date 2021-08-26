@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bf.esmt.findtransport">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_m_et"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindTransport">
+        <activity android:name="bf.esmt.easytransport.LoginActivity"
+            android:label="Espace connexion"
+            android:parentActivityName="bf.esmt.easytransport.RegistrationActivity" ></activity>
+        <activity android:name="bf.esmt.easytransport.MainActivity" />
+        <activity android:name="bf.esmt.easytransport.UpdateActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.RakietaReservation"
+            android:label="Rakieta reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.TsrReservation"
+            android:label="TSR reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.UtbResrvation"
+            android:label="UTB reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.SaramayaReservation"
+            android:label="Saramaya reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.StafReservation"
+            android:label="STAF reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.SbtaReservation"
+            android:label="SBTA reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.RahimoReservation"
+            android:label="Rahimo reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.TcvReservation"
+            android:label="TCV reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.ElitisReservation"
+            android:label="Elitis reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Reclamations"
+            android:label="Espace reclamation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Informations"
+            android:label="Espace infos"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Horaires"
+            android:label="Espace horaires"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Tarifs"
+            android:label="Espace tarifs"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Trajets"
+            android:label="Espace trajets"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.AddActivity"
+            android:label="Effectuer une reservation"
+            android:parentActivityName="bf.esmt.easytransport.Reservations" />
+        <activity
+            android:name="bf.esmt.easytransport.Reservations"
+            android:label="Espace Reservation"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.Account"
+            android:label="Espace mon compte"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <activity
+            android:name="bf.esmt.easytransport.AboutUs"
+            android:label="A propos de nous"
+            android:parentActivityName="bf.esmt.easytransport.MainActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name="bf.esmt.easytransport.RegistrationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
